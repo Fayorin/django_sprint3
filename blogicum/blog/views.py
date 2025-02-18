@@ -35,3 +35,4 @@ def category_posts(request, category_slug):
     context = {'category': category,
                'post_list': posts().filter(category=category)}
     return render(request, 'blog/category.html', context)
+    
